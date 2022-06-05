@@ -1,0 +1,556 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+pc{
+    font-size: 40pt;
+    color: rgb(255, 40, 37); 
+    line-height: 45pt;
+    font-family: 'Georgia';
+}
+
+pg{
+    font-size: 18pt;
+    color: rgb(123, 155, 136); 
+    line-height: 40px;
+    font-family: 'Georgia';
+    margin-right: 45px;
+    cursor: pointer;
+}
+pn{
+    font-size: 18pt;
+    color: rgb(123, 155, 136); 
+    line-height: 40px;
+    font-family: 'Georgia';
+    float: right;
+    cursor: pointer;
+}
+
+pl{
+    font-size: 10pt;
+    color: rgb(255, 40, 37); 
+    line-height: 10pt;
+    
+}
+
+pl1{
+    font-size: 10pt;
+    color: rgb(250, 226, 224); 
+    line-height: 10pt;
+    
+}
+
+pf{
+    font-size: 18pt;
+    color: rgb(123, 155, 136); 
+    line-height: 40px;
+    font-family: 'Georgia';
+    margin-left: 40px;
+}
+
+p{
+    margin-bottom: 5px;
+}
+
+hd{
+    font-size: 30pt;
+    color: rgb(255, 40, 37); 
+    line-height: 40px;
+    font-family: 'Georgia';
+}
+
+hd1{
+    font-size: 30pt;
+    color: rgb(123, 155, 136); 
+    line-height: 40px;
+    font-family: 'Georgia'; 
+}
+
+ha{
+    font-size: 26pt;
+    color: rgb(123, 155, 136); 
+    line-height: 32pt;
+    font-family: 'Georgia';
+    cursor: pointer;  
+
+}
+
+h2a{
+    font-size: 18pt;
+    color: rgb(123, 155, 136); 
+    line-height: 25pt;
+    font-family: 'Georgia';
+}
+
+.textb h2a{
+    font-size: 18pt;
+    color: rgb(255, 40, 37); 
+    line-height: 25pt;
+    font-family: 'Georgia';
+    cursor: pointer; 
+}
+.textb1 h2a{
+    font-size: 18pt;
+    color: rgb(255, 40, 37); 
+    line-height: 25pt;
+    font-family: 'Georgia';
+    cursor: pointer; 
+}
+
+pa{
+    font-size: 12pt;
+    color: rgb(123, 155, 136); 
+    line-height: 18pt;
+    font-family: 'Georgia'; 
+}
+
+pal{
+    font-size: 18pt;
+    color: white;
+    line-height: 30pt;
+    font-family: 'Georgia';
+    cursor: pointer;
+}
+
+paf{
+    font-size: 12pt;
+    color: white; 
+    line-height: 18pt;
+    font-family: 'Georgia'; 
+}
+
+pr{
+    font-size: 12pt;
+    color: rgb(255, 40, 37); 
+    font-family: 'Georgia';
+    float: right; 
+    cursor: pointer;
+    line-height: 60px;
+}
+
+pp{
+    font-size: 14pt;
+    color: rgb(123, 155, 136); 
+    font-family: 'Georgia';
+    float: left; 
+    cursor: pointer;
+    line-height: 60px;
+}
+
+.up{
+    width: auto;
+    height: auto;
+    position: fixed;  
+    top: 850px;
+    margin-left: 1800px;  
+    z-index: 100;
+    text-align: center;
+    line-height: 60px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+
+.fblock{
+    width: 1460px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: white;  
+    position: fixed;  
+    top: 0px; 
+    z-index: 100;
+}
+
+.titleh{
+    margin-top: 20px;
+    float: left;
+}
+
+.iconblock{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top: 35px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.iconblock img{
+    position: absolute;
+}
+
+.container{
+    width: 1900px;
+    height: 4555px;
+    margin: 0 auto;
+    background-color: rgb(250, 226, 224);
+}
+
+.iconpic:hover{    
+    transition: all 0.5s ease 0s;
+    opacity: 1;
+}
+
+.iconpic:not(:hover){
+    transition: all 0.5s ease 0s;
+    opacity: 0;
+}
+
+.line1{
+    width: 10px;
+    height: 4555px;
+    text-align: right;
+    margin: 0 40px 0 220px;
+    float: left;
+    font-family: 'MS PGothic';
+}
+
+.line2{
+    width: 10px;
+    height: 4555px;
+    text-align: left;
+    margin: 0 220px 0 40px;
+    float: right;
+    font-family: 'MS PGothic';
+}
+
+.pic{
+    width: 785.6px;
+    height: 940px;
+    float: left;
+    margin-right: 40px;
+}
+
+.find{
+    width: 533.3px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    float: left;
+    margin-top: 40px;
+}
+
+.cont{
+    width: 373px;
+    height: 242px;
+    float: left;
+    margin: 220px 80px;
+}
+
+.list{
+    width: 373.3px;
+    height: 40px;
+    float: left;
+    margin-left: 80px; 
+}
+
+        
+.cont1{
+    width: 785px;
+    height: 550px;
+    float: left;
+    background-color: rgb(123, 155, 136);
+    margin-right: 40px;
+    border-radius: 0 0 10px 10px;
+}
+
+.let{
+    width: 665px;
+    height: 490px;
+    margin: 0 60px;
+}
+
+.head1{
+    width: 373px;
+    height: 40px;
+    float: right;
+    margin-right: 80px;
+    margin-top: 138px;
+    text-align: center;
+}
+
+.text1{
+    width: 373px;
+    height: 352px;
+    float: right;
+    margin: 29px 80px 29px 80px;
+}
+
+.head2{
+    height: 60px;
+    width: 1360px;
+    float: left;
+    text-align: center;
+    margin: 60px 0 40px 0;
+}
+
+.column1{
+    height: 600px;
+    width: 426px;
+    float: left;
+}
+
+.column2{
+    height: 600px;
+    width: 426px;
+    float: left;
+    margin-left: 40px;
+}
+
+.block{
+    width: 240px;
+    height: 300px;
+    float: left;
+    background-color: rgb(123, 155, 136);
+    margin-right: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.block1{
+    width: 240px;
+    height: 300px;
+    float: left;
+    background-color: rgb(123, 155, 136);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.blockb{
+    width: 240px;
+    height: 300px;
+    float: left;
+    background-color: rgb(123, 155, 136);
+    margin-right: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.blockb1{
+    width: 240px;
+    height: 300px;
+    float: left;
+    background-color: rgb(123, 155, 136);
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.textb{
+    width: 240px;
+    height: 30px;
+    float: left;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.textb1{
+    width: 240px;
+    height: 30px;
+    float: left;
+    margin-top: 20px;
+}
+
+.textbb{
+    width: 240px;
+    height: 50px;
+    float: left;
+    margin-right: 40px;
+
+}
+
+.textbb1{
+    width: 240px;
+    height: 50px;
+    float: left;
+}
+
+footer{
+    width: 1900px;
+    height: 280px;
+    background-color: rgb(123, 155, 136);
+    margin: 0 auto;
+}
+
+.blockf{
+    width: 140px;
+    height: auto;
+    float: left;
+    margin-right: 40px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.blockf1{
+    width: 482px;
+    height: 102px;
+    float: right;
+    margin: 80px;
+}
+
+.blockc{
+    width: auto;
+    height: auto;
+    float: left;
+    position: absolute;
+}
+
+ul{
+    list-style: none;
+}
+
+.blockcl{
+    width: 346px;
+    height: 520px;
+    padding: 40px;
+    float: left;
+    position: absolute;
+    background-color: rgba(123, 155, 136, 0);
+    border-radius: 10px;
+
+}
+
+.column1 img{
+    position: absolute;
+    border-radius: 10px;
+}
+
+.column2 img{
+    position: absolute;
+    border-radius: 10px;
+}
+
+.blockcl:hover{
+    transition: all 1s ease 0s;
+    background-color: rgba(123, 155, 136, 0.7);
+}
+
+.blockcl:hover pal{
+    transition: all 0.5s ease 0s;
+    opacity: 1;
+}
+
+pal:hover{
+    color: rgb(255, 40, 37);
+}
+
+.blockcl:not(:hover){
+    transition: all 1s ease 0s;
+    background-color: rgba(123, 155, 136, 0);
+}
+
+.blockcl:not(:hover) pal{
+    transition: all 1s ease 0s;
+    opacity: 0;
+}
+
+
+pg:hover{
+    transition: all 0.5s ease 0s;
+    color: rgb(255, 40, 37);
+}
+
+pg:not(:hover){
+    transition: all 0.5s ease 0s;
+}
+
+pn:hover{
+    transition: all 0.5s ease 0s;
+    color: rgb(255, 40, 37);
+}
+
+pn:not(:hover){
+    transition: all 0.5s ease 0s;
+}
+
+ha:hover{
+    transition: all 0.5s ease 0s;
+    color: rgb(255, 40, 37);
+}
+
+ha:not(:hover){
+    transition: all 0.5s ease 0s;
+}
+
+.textb h2a:hover{
+    transition: all 0.5s ease 0s;
+    color: rgb(123, 155, 136);
+}
+
+.textb h2a:not(:hover){
+    transition: all 0.5s ease 0s;
+}
+
+.textb1 h2a:hover{
+    transition: all 0.5s ease 0s;
+    color: rgb(123, 155, 136);
+}
+
+.textb1 h2a:not(:hover){
+    transition: all 0.5s ease 0s;
+}
+
+pr:hover{
+    transition: all 0.5s ease 0s;
+    color: rgb(123, 155, 136);
+}
+
+pr:not(:hover){
+    transition: all 0.5s ease 0s;
+}
+
+.block img{
+    position: absolute;
+    border-radius: 10px;
+}
+
+.block1 img{
+    position: absolute;
+    border-radius: 10px;
+}
+
+.blockb img{
+    position: absolute;
+    border-radius: 10px;
+}
+
+.blockb1 img{
+    position: absolute;
+    border-radius: 10px;
+}
+
+.blockpic img{
+    border-radius: 10px;
+}
+
+.blockpic{
+    position: absolute;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.blockpic:hover{
+    transition: all 0.7s ease 0s;
+    opacity: 0;
+}
+
+.blockpic:not(:hover){
+    transition: all 0.7s ease 0s;
+    opacity: 1;
+}
+
+paf:hover{
+    transition: all 0.5s ease 0s;
+    color: rgb(255, 40, 37);
+}
+
+paf:not(:hover){
+    transition: all 0.5s ease 0s;
+}
