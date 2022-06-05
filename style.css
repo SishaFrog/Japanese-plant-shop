@@ -38,7 +38,6 @@ pl1{
     font-size: 10pt;
     color: rgb(250, 226, 224); 
     line-height: 10pt;
-    
 }
 
 pf{
@@ -139,8 +138,6 @@ pp{
 }
 
 .up{
-    width: auto;
-    height: auto;
     position: fixed;  
     top: 850px;
     margin-left: 1800px;  
@@ -167,8 +164,40 @@ pp{
 }
 
 .titleh{
+    height: auto;
+    width: auto;
     margin-top: 20px;
     float: left;
+}
+
+.finder{
+    height: 40px;
+    width: 426px;
+    background-color: white;
+    border-radius: 10px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 232px;
+}
+
+.finder:hover{
+    transition: all 0.5s ease 0s;
+    background-color: rgb(123, 155, 136);
+}
+
+.finder:hover pf{
+    transition: all 0.5s ease 0s;
+    color: white;
+}
+
+.finder:not(:hover) pf{
+    transition: all 0.5s ease 0s;
+    color: rgb(123, 155, 136);
+}
+
+.finder:not(:hover){
+    transition: all 0.5s ease 0s;
+    background-color: rgba(123, 155, 136, 0.2);
 }
 
 .iconblock{
@@ -186,7 +215,7 @@ pp{
 
 .container{
     width: 1900px;
-    height: 4555px;
+    height: 4556px;
     margin: 0 auto;
     background-color: rgb(250, 226, 224);
 }
@@ -203,20 +232,22 @@ pp{
 
 .line1{
     width: 10px;
-    height: 4555px;
+    height: auto;
     text-align: right;
     margin: 0 40px 0 220px;
     float: left;
     font-family: 'MS PGothic';
+    user-select: none;
 }
 
 .line2{
     width: 10px;
-    height: 4555px;
+    height: auto;
     text-align: left;
     margin: 0 220px 0 40px;
     float: right;
     font-family: 'MS PGothic';
+    user-select: none;
 }
 
 .pic{
@@ -233,6 +264,16 @@ pp{
     border-radius: 10px;
     float: left;
     margin-top: 40px;
+}
+
+.find:hover pf{
+    transition: all 0.5s ease 0s;
+    color: rgb(255, 40, 37);
+}
+
+.find:not(:hover) pf{
+    transition: all 0.5s ease 0s;
+    color: rgb(123, 155, 136);
 }
 
 .cont{
