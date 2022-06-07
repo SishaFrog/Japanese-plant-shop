@@ -178,6 +178,26 @@ pp{
     float: left;
     margin-top: 30px;
     margin-left: 232px;
+    cursor: pointer;
+}
+
+.finder input{
+    position: absolute;
+    width: 386px;
+    height: 40px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgb(123, 155, 136);
+    opacity: 0;
+    font-size: 18pt;
+    font-family: 'Georgia';
+    color: white;
+    padding-left: 40px;
+    outline: 0;
+}
+
+.finder input::-webkit-input-placeholder { 
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .finder:hover{
@@ -185,20 +205,21 @@ pp{
     background-color: rgb(123, 155, 136);
 }
 
-.finder:hover pf{
+.finder:hover input{
     transition: all 0.5s ease 0s;
-    color: white;
+    opacity: 1;
 }
 
-.finder:not(:hover) pf{
+.finder:not(:hover) input{
     transition: all 0.5s ease 0s;
-    color: rgb(123, 155, 136);
+    opacity: 0;
 }
 
 .finder:not(:hover){
     transition: all 0.5s ease 0s;
     background-color: rgba(123, 155, 136, 0.2);
 }
+
 
 .iconblock{
     width: 30px;
@@ -215,7 +236,7 @@ pp{
 
 .container{
     width: 1900px;
-    height: 4556px;
+    height: 4560px;
     margin: 0 auto;
     background-color: rgb(250, 226, 224);
 }
@@ -231,20 +252,20 @@ pp{
 }
 
 .line1{
-    width: 10px;
+    width: 12px;
     height: auto;
     text-align: right;
-    margin: 0 40px 0 220px;
+    margin: 0 40px 0 218px;
     float: left;
     font-family: 'MS PGothic';
     user-select: none;
 }
 
 .line2{
-    width: 10px;
+    width: 12px;
     height: auto;
     text-align: left;
-    margin: 0 220px 0 40px;
+    margin: 0 218px 0 40px;
     float: right;
     font-family: 'MS PGothic';
     user-select: none;
@@ -264,16 +285,36 @@ pp{
     border-radius: 10px;
     float: left;
     margin-top: 40px;
+    cursor: pointer;
 }
 
-.find:hover pf{
-    transition: all 0.5s ease 0s;
-    color: rgb(255, 40, 37);
+.find input{
+    position: absolute;
+    width: 493.3px;
+    height: 40px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0;
+    font-size: 18pt;
+    font-family: 'Georgia';
+    color: rgb(255, 41, 37);
+    padding-left: 40px;
+    outline: 0;
 }
 
-.find:not(:hover) pf{
+.find input::-webkit-input-placeholder { 
+    color: rgba(255, 41, 37, 0.5);
+}
+
+.find:hover input{
     transition: all 0.5s ease 0s;
-    color: rgb(123, 155, 136);
+    opacity: 1;
+}
+
+.find:not(:hover) input{
+    transition: all 0.5s ease 0s;
+    opacity: 0;
 }
 
 .cont{
