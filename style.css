@@ -168,6 +168,7 @@ pp{
     width: auto;
     margin-top: 20px;
     float: left;
+    user-select: none;
 }
 
 .finder{
@@ -179,6 +180,7 @@ pp{
     margin-top: 30px;
     margin-left: 232px;
     cursor: pointer;
+    user-select: none;
 }
 
 .finder input{
@@ -228,6 +230,7 @@ pp{
     margin-top: 35px;
     margin-left: 50px;
     cursor: pointer;
+    user-select: none;
 }
 
 .iconblock img{
@@ -276,6 +279,7 @@ pp{
     height: 940px;
     float: left;
     margin-right: 40px;
+    user-select: none;
 }
 
 .find{
@@ -286,6 +290,7 @@ pp{
     float: left;
     margin-top: 40px;
     cursor: pointer;
+    user-select: none;
 }
 
 .find input{
@@ -322,6 +327,7 @@ pp{
     height: 242px;
     float: left;
     margin: 220px 80px;
+    user-select: none;
 }
 
 .list{
@@ -345,6 +351,7 @@ pp{
     width: 665px;
     height: 490px;
     margin: 0 60px;
+    user-select: none;
 }
 
 .head1{
@@ -375,6 +382,7 @@ pp{
     height: 600px;
     width: 426px;
     float: left;
+    user-select: none;
 }
 
 .column2{
@@ -382,6 +390,7 @@ pp{
     width: 426px;
     float: left;
     margin-left: 40px;
+    user-select: none;
 }
 
 .block{
@@ -392,6 +401,7 @@ pp{
     margin-right: 40px;
     cursor: pointer;
     border-radius: 10px;
+    user-select: none;
 }
 
 .block1{
@@ -401,6 +411,7 @@ pp{
     background-color: rgb(123, 155, 136);
     cursor: pointer;
     border-radius: 10px;
+    user-select: none;
 }
 
 .blockb{
@@ -412,6 +423,7 @@ pp{
     margin-top: 20px;
     cursor: pointer;
     border-radius: 10px;
+    user-select: none;
 }
 
 .blockb1{
@@ -422,6 +434,7 @@ pp{
     margin-top: 20px;
     cursor: pointer;
     border-radius: 10px;
+    user-select: none;
 }
 
 .textb{
@@ -454,10 +467,11 @@ pp{
 }
 
 footer{
-    width: 1900px;
+    width: 1380px;
     height: 280px;
     background-color: rgb(123, 155, 136);
     margin: 0 auto;
+    padding: 0 260px 0 260px;
 }
 
 .blockf{
@@ -474,6 +488,7 @@ footer{
     height: 102px;
     float: right;
     margin: 80px;
+    user-select: none;
 }
 
 .blockc{
