@@ -27,19 +27,6 @@ pn{
     cursor: pointer;
 }
 
-pl{
-    font-size: 10pt;
-    color: rgb(255, 40, 37); 
-    line-height: 10pt;
-    
-}
-
-pl1{
-    font-size: 10pt;
-    color: rgb(250, 226, 224); 
-    line-height: 10pt;
-}
-
 pf{
     font-size: 18pt;
     color: rgb(123, 155, 136); 
@@ -72,7 +59,6 @@ ha{
     line-height: 32pt;
     font-family: 'Georgia';
     cursor: pointer;  
-
 }
 
 h2a{
@@ -89,6 +75,7 @@ h2a{
     font-family: 'Georgia';
     cursor: pointer; 
 }
+
 .textb1 h2a{
     font-size: 18pt;
     color: rgb(255, 40, 37); 
@@ -141,17 +128,10 @@ pp{
     position: fixed;  
     top: 850px;
     margin-left: 1800px;  
-    z-index: 100;
     text-align: center;
     line-height: 60px;
     transform: rotate(-90deg);
     cursor: pointer;
-}
-
-.fblock{
-    width: 1460px;
-    height: 100px;
-    margin: 0 auto;
 }
 
 .header{
@@ -161,6 +141,12 @@ pp{
     position: fixed;  
     top: 0px; 
     z-index: 100;
+}
+
+.fblock{
+    width: 1460px;
+    height: 100px;
+    margin: 0 auto;
 }
 
 .titleh{
@@ -174,18 +160,17 @@ pp{
 .finder{
     height: 40px;
     width: 426px;
-    background-color: white;
     border-radius: 10px;
     float: left;
+    background-color: rgba(123, 155, 136, 0.2);
     margin-top: 30px;
     margin-left: 232px;
     cursor: pointer;
-    user-select: none;
 }
 
 .finder input{
     position: absolute;
-    width: 386px;
+    width: 346px;
     height: 40px;
     border: 0px;
     border-radius: 10px;
@@ -194,17 +179,12 @@ pp{
     font-size: 18pt;
     font-family: 'Georgia';
     color: white;
-    padding-left: 40px;
+    padding: 0 40px;
     outline: 0;
 }
 
 .finder input::-webkit-input-placeholder { 
     color: rgba(255, 255, 255, 0.5);
-}
-
-.finder:hover{
-    transition: all 0.5s ease 0s;
-    background-color: rgb(123, 155, 136);
 }
 
 .finder:hover input{
@@ -216,12 +196,6 @@ pp{
     transition: all 0.5s ease 0s;
     opacity: 0;
 }
-
-.finder:not(:hover){
-    transition: all 0.5s ease 0s;
-    background-color: rgba(123, 155, 136, 0.2);
-}
-
 
 .iconblock{
     width: 30px;
@@ -237,13 +211,6 @@ pp{
     position: absolute;
 }
 
-.container{
-    width: 1900px;
-    height: 4560px;
-    margin: 0 auto;
-    background-color: rgb(250, 226, 224);
-}
-
 .iconpic:hover{    
     transition: all 0.5s ease 0s;
     opacity: 1;
@@ -252,6 +219,13 @@ pp{
 .iconpic:not(:hover){
     transition: all 0.5s ease 0s;
     opacity: 0;
+}
+
+.container{
+    width: 1900px;
+    height: 4560px;
+    margin: 0 auto;
+    background-color: rgb(250, 226, 224);
 }
 
 .line1{
@@ -295,7 +269,7 @@ pp{
 
 .find input{
     position: absolute;
-    width: 493.3px;
+    width: 453.3px;
     height: 40px;
     border: 0px;
     border-radius: 10px;
@@ -304,7 +278,7 @@ pp{
     font-size: 18pt;
     font-family: 'Georgia';
     color: rgb(255, 41, 37);
-    padding-left: 40px;
+    padding: 0 40px;
     outline: 0;
 }
 
@@ -336,7 +310,6 @@ pp{
     float: left;
     margin-left: 80px; 
 }
-
         
 .cont1{
     width: 785px;
@@ -391,6 +364,61 @@ pp{
     float: left;
     margin-left: 40px;
     user-select: none;
+}
+
+.blockc{
+    width: auto;
+    height: auto;
+    float: left;
+    position: absolute;
+}
+
+ul{
+    list-style: none;
+}
+
+.blockcl{
+    width: 346px;
+    height: 520px;
+    padding: 40px;
+    float: left;
+    position: absolute;
+    background-color: rgba(123, 155, 136, 0);
+    border-radius: 10px;
+}
+
+.column1 img{
+    position: absolute;
+    border-radius: 10px;
+}
+
+.column2 img{
+    position: absolute;
+    border-radius: 10px;
+}
+
+.blockcl:hover{
+    transition: all 1s ease 0s;
+    background-color: rgba(123, 155, 136, 0.7);
+}
+
+.blockcl:hover pal{
+    transition: all 0.5s ease 0s;
+    opacity: 1;
+}
+
+pal:hover{
+    color: rgb(255, 40, 37);
+}
+
+.blockcl:not(:hover){
+    transition: all 1s ease 0s;
+    background-color: rgba(123, 155, 136, 0);
+}
+
+.blockcl:not(:hover) pal{
+    transition: all 1s ease 0s;
+    opacity: 0;
 }
 
 .block{
@@ -490,63 +518,6 @@ footer{
     margin: 80px;
     user-select: none;
 }
-
-.blockc{
-    width: auto;
-    height: auto;
-    float: left;
-    position: absolute;
-}
-
-ul{
-    list-style: none;
-}
-
-.blockcl{
-    width: 346px;
-    height: 520px;
-    padding: 40px;
-    float: left;
-    position: absolute;
-    background-color: rgba(123, 155, 136, 0);
-    border-radius: 10px;
-
-}
-
-.column1 img{
-    position: absolute;
-    border-radius: 10px;
-}
-
-.column2 img{
-    position: absolute;
-    border-radius: 10px;
-}
-
-.blockcl:hover{
-    transition: all 1s ease 0s;
-    background-color: rgba(123, 155, 136, 0.7);
-}
-
-.blockcl:hover pal{
-    transition: all 0.5s ease 0s;
-    opacity: 1;
-}
-
-pal:hover{
-    color: rgb(255, 40, 37);
-}
-
-.blockcl:not(:hover){
-    transition: all 1s ease 0s;
-    background-color: rgba(123, 155, 136, 0);
-}
-
-.blockcl:not(:hover) pal{
-    transition: all 1s ease 0s;
-    opacity: 0;
-}
-
 
 pg:hover{
     transition: all 0.5s ease 0s;
