@@ -1,624 +1,433 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEIKATSU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "home" class="fblock"></div>
 
-pc{
-    font-size: 40pt;
-    color: rgb(255, 40, 37); 
-    line-height: 45pt;
-    font-family: 'Georgia';
-}
+    <div class="header">
+        <div class="fblock">
+            <div class="titleh">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/head.png";>
+            </div>
 
-pg{
-    font-size: 18pt;
-    color: rgb(123, 155, 136); 
-    line-height: 40px;
-    font-family: 'Georgia';
-    margin-right: 45px;
-    cursor: pointer;
-}
-pn{
-    font-size: 18pt;
-    color: rgb(123, 155, 136); 
-    line-height: 40px;
-    font-family: 'Georgia';
-    float: right;
-    cursor: pointer;
-}
+            <div class="finder">
+                <input placeholder="find your plant">
+                <pf>find your plant</pf>
+            </div>
 
-pf{
-    font-size: 18pt;
-    color: rgb(123, 155, 136); 
-    line-height: 40px;
-    font-family: 'Georgia';
-    margin-left: 40px;
-}
+            <div class="iconblock">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/basket1.png";>
+                <div class="iconpic">
+                    <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/basket.png";>
+                </div>
+            </div>
 
-p{
-    margin-bottom: 5px;
-}
+            <div class="iconblock">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/heart1.png";>
+                <div class="iconpic">
+                    <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/heart.png";>
+                </div>
+            </div>
 
-hd{
-    font-size: 30pt;
-    color: rgb(255, 40, 37); 
-    line-height: 40px;
-    font-family: 'Georgia';
-}
+            <div class="iconblock">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/account1.png";>
+                <div class="iconpic">
+                    <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/account.png";>
+                </div>
+            </div>
+        </div>    
+    </div>
 
-hd1{
-    font-size: 30pt;
-    color: rgb(123, 155, 136); 
-    line-height: 40px;
-    font-family: 'Georgia'; 
-}
+    <div class="up">
+        <hd onclick="location.href='#home'">></hd>
+    </div>
 
-ha{
-    font-size: 26pt;
-    color: rgb(123, 155, 136); 
-    line-height: 32pt;
-    font-family: 'Georgia';
-    cursor: pointer;  
-}
+    <div class="container">
 
-h2a{
-    font-size: 18pt;
-    color: rgb(123, 155, 136); 
-    line-height: 25pt;
-    font-family: 'Georgia';
-}
+        <div class="line1">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/line1.png";>
+        </div>
 
-.textb h2a{
-    font-size: 18pt;
-    color: rgb(255, 40, 37); 
-    line-height: 25pt;
-    font-family: 'Georgia';
-    cursor: pointer; 
-}
+        <div class="pic">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/pic.png";>
+        </div>
 
-.textb1 h2a{
-    font-size: 18pt;
-    color: rgb(255, 40, 37); 
-    line-height: 25pt;
-    font-family: 'Georgia';
-    cursor: pointer; 
-}
-
-pa{
-    font-size: 12pt;
-    color: rgb(123, 155, 136); 
-    line-height: 18pt;
-    font-family: 'Georgia'; 
-}
-
-pal{
-    font-size: 18pt;
-    color: white;
-    line-height: 30pt;
-    font-family: 'Georgia';
-    cursor: pointer;
-}
-
-paf{
-    font-size: 12pt;
-    color: white; 
-    line-height: 18pt;
-    font-family: 'Georgia'; 
-}
-
-pr{
-    font-size: 12pt;
-    color: rgb(255, 40, 37); 
-    font-family: 'Georgia';
-    float: right; 
-    cursor: pointer;
-    line-height: 60px;
-}
-
-pp{
-    font-size: 14pt;
-    color: rgb(123, 155, 136); 
-    font-family: 'Georgia';
-    float: left; 
-    cursor: pointer;
-    line-height: 60px;
-}
-
-.up{
-    position: fixed;  
-    top: 850px;
-    margin-left: 1800px;  
-    text-align: center;
-    line-height: 60px;
-    transform: rotate(-90deg);
-    cursor: pointer;
-}
-
-.header{
-    width: 100%;
-    height: 100px;
-    background-color: white;  
-    position: fixed;  
-    top: 0px; 
-    z-index: 100;
-}
-
-.fblock{
-    width: 1460px;
-    height: 100px;
-    margin: 0 auto;
-}
-
-.titleh{
-    height: auto;
-    width: auto;
-    margin-top: 20px;
-    float: left;
-    user-select: none;
-}
-
-.finder{
-    height: 40px;
-    width: 426px;
-    border-radius: 10px;
-    float: left;
-    background-color: rgba(123, 155, 136, 0.2);
-    margin-top: 30px;
-    margin-left: 232px;
-    cursor: pointer;
-}
-
-.finder input{
-    position: absolute;
-    width: 346px;
-    height: 40px;
-    border: 0px;
-    border-radius: 10px;
-    background-color: rgb(123, 155, 136);
-    opacity: 0;
-    font-size: 18pt;
-    font-family: 'Georgia';
-    color: white;
-    padding: 0 40px;
-    outline: 0;
-}
-
-.finder input::-webkit-input-placeholder { 
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.finder:hover input{
-    transition: all 0.5s ease 0s;
-    opacity: 1;
-}
-
-.finder:not(:hover) input{
-    transition: all 0.5s ease 0s;
-    opacity: 0;
-}
-
-.iconblock{
-    width: 30px;
-    height: 30px;
-    float: right;
-    margin-top: 35px;
-    margin-left: 50px;
-    cursor: pointer;
-    user-select: none;
-}
-
-.iconblock img{
-    position: absolute;
-}
-
-.iconpic:hover{    
-    transition: all 0.5s ease 0s;
-    opacity: 1;
-}
-
-.iconpic:not(:hover){
-    transition: all 0.5s ease 0s;
-    opacity: 0;
-}
-
-.container{
-    width: 1900px;
-    height: 4560px;
-    margin: 0 auto;
-    background-color: rgb(250, 226, 224);
-}
-
-.line1{
-    width: 12px;
-    height: auto;
-    text-align: right;
-    margin: 0 40px 0 218px;
-    float: left;
-    font-family: 'MS PGothic';
-    user-select: none;
-}
-
-.line2{
-    width: 12px;
-    height: auto;
-    text-align: left;
-    margin: 0 218px 0 40px;
-    float: right;
-    font-family: 'MS PGothic';
-    user-select: none;
-}
-
-.pic{
-    width: 785.6px;
-    height: 940px;
-    float: left;
-    margin-right: 40px;
-    user-select: none;
-}
-
-.find{
-    width: 533.3px;
-    height: 40px;
-    background-color: white;
-    border-radius: 10px;
-    float: left;
-    margin-top: 40px;
-    cursor: pointer;
-    user-select: none;
-}
-
-.find input{
-    position: absolute;
-    width: 453.3px;
-    height: 40px;
-    border: 0px;
-    border-radius: 10px;
-    background-color: white;
-    opacity: 0;
-    font-size: 18pt;
-    font-family: 'Georgia';
-    color: rgb(255, 41, 37);
-    padding: 0 40px;
-    outline: 0;
-}
-
-.find input::-webkit-input-placeholder { 
-    color: rgba(255, 41, 37, 0.5);
-}
-
-.find:hover input{
-    transition: all 0.5s ease 0s;
-    opacity: 1;
-}
-
-.find:not(:hover) input{
-    transition: all 0.5s ease 0s;
-    opacity: 0;
-}
-
-.cont{
-    width: 373px;
-    height: 242px;
-    float: left;
-    margin: 220px 80px;
-    user-select: none;
-}
-
-.list{
-    width: 373.3px;
-    height: 40px;
-    float: left;
-    margin-left: 80px; 
-}
+        <div class="find">
+            <input name="find2" placeholder="find your plant">
+            <pf>find your plant</pf>
+        </div>
         
-.cont1{
-    width: 785px;
-    height: 550px;
-    float: left;
-    background-color: rgb(123, 155, 136);
-    margin-right: 40px;
-    border-radius: 0 0 10px 10px;
-}
+        <div class="line2">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/line2.png";>
+        </div> 
 
-.let{
-    width: 665px;
-    height: 490px;
-    margin: 0 60px;
-    user-select: none;
-}
+        <div class="cont">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/cont.jpg";>
+        </div>
 
-.head1{
-    width: 373px;
-    height: 40px;
-    float: right;
-    margin-right: 80px;
-    margin-top: 138px;
-    text-align: center;
-}
+        <div id = "about"  class="list">
+            <pg onclick="location.href='#categories'">categories</pg> 
+            <pg onclick="location.href='#articles'">articles</pg> 
+            <pn onclick="location.href='#products'">products</pn>
+        </div>
 
-.text1{
-    width: 373px;
-    height: 352px;
-    float: right;
-    margin: 29px 80px 29px 80px;
-}
+        <div class="head1">
+            <hd>— about us —</hd>
+        </div>
+        
+        <div class="cont1">
+            <div class="let">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/cont1.png";>
+            </div>
+        </div>
 
-.head2{
-    height: 60px;
-    width: 1360px;
-    float: left;
-    text-align: center;
-    margin: 60px 0 40px 0;
-}
+        <div class="text1">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/text1.png";>
+        </div>
+        
+        <div id = "categories" class="head2">
+            <hd>— categories —</hd>
+        </div>
+        
+        <div class="column1">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/flowers.png";>
+            
+            <div class="blockc">
+                <div class="blockcl">
+                    <pc><p>flowers</p></pc>
+                    <ul class="listc">
+                        <li><pal>annuals</pal></li>
+                        <li><pal>shrubs</pal></li>
+                        <li><pal>succulents</pal></li>
+                        <li><pal>cacti</pal></li>
+                        <li><pal>ornamental grasses</pal></li>
+                        <li><pal>herbal</pal></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-.column1{
-    height: 600px;
-    width: 426px;
-    float: left;
-    user-select: none;
-}
+        <div class="column2">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/pond.png";>
 
-.column2{
-    height: 600px;
-    width: 426px;
-    float: left;
-    margin-left: 40px;
-    user-select: none;
-}
+            <div class="blockc">
+                <div class="blockcl">
+                    <pc>pond <p>plants</p></pc>
+                    <ul class="listc">
+                        <li><pal>waterweed</pal></li>
+                        <li><pal>eelgrass</pal></li>
+                        <li><pal>water lily</pal></li>
+                        <li><pal>dwarf cattail</pal></li>
+                        <li><pal>water lettuce</pal></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-.blockc{
-    width: auto;
-    height: auto;
-    float: left;
-    position: absolute;
-}
+        <div class="column2">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/tree.png";>
 
-ul{
-    list-style: none;
-}
+            <div class="blockc">
+                <div class="blockcl">
+                    <pc><p>trees</p></pc>
+                    <ul class="listc">
+                        <li><pal>fruit</pal></li>
+                        <li><pal>nut</pal></li>
+                        <li><pal>palm</pal></li>
+                        <li><pal>ornamental</pal></li>
+                        <li><pal>evergreen</pal></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-.blockcl{
-    width: 346px;
-    height: 520px;
-    padding: 40px;
-    float: left;
-    position: absolute;
-    background-color: rgba(123, 155, 136, 0);
-    border-radius: 10px;
-}
+        <div id = "articles" class="head2">
+            <hd>— articles —</hd>
+        </div>
 
-.column1 img{
-    position: absolute;
-    border-radius: 10px;
-}
+        <div class="column1">
+            <ha>Traditional Japanese Plants</ha>
+            <h2a><p>Create a Peaceful Paradise</p></h2a>
+            <pa><p>The mountainous topography of Japan means that a wide variety of plants thrive there, with some plants thriving in hot humid summers, while others requi re dry conditions and heavy snowfall with a period of dormancy.</p>
+            <p><hd1>—</hd1></p></pa>
 
-.column2 img{
-    position: absolute;
-    border-radius: 10px;
-}
+            <ha>Japanese Flowers</ha>
+            <h2a><p>How to Plant and Grow Flowers</p></h2a>
+            <pa><p>Beautiful flowers come from all parts of the world. However, there is a particularly high volume of these plants that come from Japan.</p>
+            <p><hd1>—</hd1></p></pa>
 
-.blockcl:hover{
-    transition: all 1s ease 0s;
-    background-color: rgba(123, 155, 136, 0.7);
-}
+            <ha>Evergreen Trees</ha>
+            <pa><p>Get the landscape you want in no time with these beautiful evergreen trees.</p>
+            </pa>
+        </div>
 
-.blockcl:hover pal{
-    transition: all 0.5s ease 0s;
-    opacity: 1;
-}
+        <div class="column2">
+            <ha>Japan’s botanical sunrise</ha>
+            <h2a><p>Plant Exploration Around the Meiji Restoration</p></h2a>
+            <pa><p>It is generally appreciated that Western gardens have been greatly enriched by the native plants of the Far East.</p>
+            <p><hd1>—</hd1></p></pa>
 
-pal:hover{
-    color: rgb(255, 40, 37);
-}
+            <ha>Houseplants</ha>
+            <h2a><p>Growing Plants Indoors</p></h2a>
+            <pa><p>Not everyone has room for a garden but anyone can grow houseplants! There are even benefits to growing plants indoors and we’ll help you pick the best houseplants.</p>
+            <p><hd1>—</hd1></p></pa>
 
-.blockcl:not(:hover){
-    transition: all 1s ease 0s;
-    background-color: rgba(123, 155, 136, 0);
-}
+            <ha>Fuchsias Indoors</ha>
+            <h2a><p>How to Grow and Care for Fuchsias Indoors</p></h2a>
+            <pa><p>Fuchsias are hanging basket staples in temperate regions. Their colorful, drooping, and tubular flowers bloom from spring to fall and bring hummingbirds and other pollinators to your garden.</p>
+            </pa>
+        </div>
 
-.blockcl:not(:hover) pal{
-    transition: all 1s ease 0s;
-    opacity: 0;
-}
+        <div class="column2">
+            <ha>Kwanzan Cherry Tree</ha>
+            <pa><p>These ornamental trees are spectacular when in bloom, with voluminous deep pink double blossoms. After their spring bloom, the trees make attractive anchors for informal gardens, and provide lovely yellow-to-bronze colors in the fall.</p>
+            <p><hd1>—</hd1></p></pa>
 
-.block{
-    width: 240px;
-    height: 300px;
-    float: left;
-    background-color: rgb(123, 155, 136);
-    margin-right: 40px;
-    cursor: pointer;
-    border-radius: 10px;
-    user-select: none;
-}
+            <ha>Miltonia Orchids</ha>
+            <h2a><p>What You Need to Know about Growing Miltonia Orchids</p></h2a>
+            <pa><p>Miltonia orchids are a genus of plants that includes about 20 types and natural hybrids.</p>
+            <p><hd1>—</hd1></p></pa>
 
-.block1{
-    width: 240px;
-    height: 300px;
-    float: left;
-    background-color: rgb(123, 155, 136);
-    cursor: pointer;
-    border-radius: 10px;
-    user-select: none;
-}
+            <ha>Bamboo</ha>
+            <h2a><p>How to Grow Bamboo Indoors</p></h2a>
+            <pa><p>The common name bamboo is applied to over a thousand plant species. In the wild, several of these species can grow to towering heights of 50 feet or more.</p>
+            </pa>
+        </div>
 
-.blockb{
-    width: 240px;
-    height: 300px;
-    float: left;
-    background-color: rgb(123, 155, 136);
-    margin-right: 40px;
-    margin-top: 20px;
-    cursor: pointer;
-    border-radius: 10px;
-    user-select: none;
-}
+        <pr>more></pr>
 
-.blockb1{
-    width: 240px;
-    height: 300px;
-    float: left;
-    background-color: rgb(123, 155, 136);
-    margin-top: 20px;
-    cursor: pointer;
-    border-radius: 10px;
-    user-select: none;
-}
+        <div id = "products" class="head2">
+            <hd>— products —</hd>
+        </div>
 
-.textb{
-    width: 240px;
-    height: 30px;
-    float: left;
-    margin-right: 40px;
-    margin-top: 20px;
-}
+        <div class="block">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/silk1.png";>
+            <div class="blockpic">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/silk2.png";>
+            </div>
+        </div>
+        <div class="block">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/kwa1.png";>
+            <div class="blockpic">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/kwa2.png";>
+            </div>
+        </div>
+        <div class="block">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/hyd1.png";>
+            <div class="blockpic">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/hyd2.png";>
+            </div>
+        </div>
+        <div class="block">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/bonsai1.png";>
+            <div class="blockpic">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/bonsai2.png";>
+            </div>
+        </div>
+        <div class="block1">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/wed1.png";>
+            <div class="blockpic">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/wed2.png";>
+            </div>
+        </div>
 
-.textb1{
-    width: 240px;
-    height: 30px;
-    float: left;
-    margin-top: 20px;
-}
+        <div class="textb">
+            <h2a>Ivory Silk Tree</h2a>
+        </div>
+        <div class="textb">
+            <h2a>Kwanzan Cherry Tree</h2a>
+        </div>
+        <div class="textb">
+            <h2a>Hydrangea Tree</h2a>
+        </div>
+        <div class="textb">
+            <h2a>Bonsai</h2a>
+        </div>
+        <div class="textb1">
+            <h2a>Weeping Cherry Tree</h2a>
+        </div>
 
-.textbb{
-    width: 240px;
-    height: 50px;
-    float: left;
-    margin-right: 40px;
+        <div class="textbb">
+            <pp>499.99$</pp>
+        </div>
+        <div class="textbb">
+            <pp>799.99$</pp>
+        </div>
+        <div class="textbb">
+            <pp>49.99$</pp>
+        </div>
+        <div class="textbb">
+            <pp>99.99$</pp>
+        </div>
+        <div class="textbb1">
+            <pp>749.99$</pp>
+        </div>
 
-}
+        <div class="blockb">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/pine1.png";>
+            <div class="blockpic">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/pine2.png";>
+            </div>
+        </div>
+        <div class="blockb">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/lily1.png";>
+            <div class="blockpic">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/lily2.png";>
+            </div>
+        </div>
+        <div class="blockb">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/bamboo1.png";>
+            <div class="blockpic">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/bamboo2.png";>
+            </div>
+        </div>
+        <div class="blockb">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/laurel1.png";>
+            <div class="blockpic">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/laurel2.png";>
+            </div>
+        </div>
+        <div class="blockb1">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/poppy1.png";>
+            <div class="blockpic">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/poppy2.png";>
+            </div>
+        </div>
+        
+        <div class="textb">
+            <h2a>Pine Tree</h2a>
+        </div>
 
-.textbb1{
-    width: 240px;
-    height: 50px;
-    float: left;
-}
+        <div class="textb">
+            <h2a>Water Lily</h2a>
+        </div>
+        <div class="textb">
+            <h2a>Bamboo Tree</h2a>
+        </div>
+        <div class="textb">
+            <h2a>Laurel Flower</h2a>
+        </div>
+       
+        <div class="textb1">
+            <h2a>Oriental Poppy</h2a>
+        </div>
 
-footer{
-    width: 1380px;
-    height: 280px;
-    background-color: rgb(123, 155, 136);
-    margin: 0 auto;
-    padding: 0 260px 0 260px;
-}
+        <div class="textbb">
+            <pp>399.99$</pp>
+        </div>
+        <div class="textbb">
+            <pp>89.99$</pp>
+        </div>
+        <div class="textbb">
+            <pp>149.99$</pp>
+        </div>
+        <div class="textbb">
+            <pp>29.99$</pp>
+        </div>
+        <div class="textbb1">
+            <pp>19.99$</pp>
+        </div>
 
-.blockf{
-    width: 140px;
-    height: auto;
-    float: left;
-    margin-right: 40px;
-    margin-top: 40px;
-    cursor: pointer;
-}
+        <div class="blockb">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/basil1.png";>
+            <div class="blockpic">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/basil2.png";>
+            </div>
+        </div>
+        <div class="blockb">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/camelia1.png";>
+            <div class="blockpic">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/camelia2.png";>
+            </div>
+        </div>
+        <div class="blockb">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/hosta1.png";>
+            <div class="blockpic">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/hosta2.png";>
+            </div>
+        </div>
+        <div class="blockb">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/iris1.png";>
+            <div class="blockpic">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/iris2.png";>
+            </div>
+        </div>
+        <div class="blockb1">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/wisteria1.png";>
+            <div class="blockpic">
+                <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/products/wisteria2.png";>
+            </div>
+        </div>
 
-.blockf1{
-    width: 482px;
-    height: 102px;
-    float: right;
-    margin: 80px;
-    user-select: none;
-}
+        <div class="textb">
+            <h2a>Dark Opal Basil</h2a>
+        </div>
+        <div class="textb">
+            <h2a>Camellia Japonica</h2a>
+        </div>
+        <div class="textb">
+            <h2a>Hosta</h2a>
+        </div>
+        <div class="textb">
+            <h2a>Iris</h2a>
+        </div>
+        <div class="textb1">
+            <h2a>Wisteria Sinensis</h2a>
+        </div>
 
-pg:hover{
-    transition: all 0.5s ease 0s;
-    color: rgb(255, 40, 37);
-}
+        <div class="textbb">
+            <pp>9.99$</pp>
+        </div>
+        <div class="textbb">
+            <pp>39.99$</pp>
+        </div>
+        <div class="textbb">
+            <pp>49.99$</pp>
+        </div>
+        <div class="textbb">
+            <pp>29.99$</pp>
+        </div>
+        <div class="textbb1">
+            <pp>499.99$</pp>
+        </div>
 
-pg:not(:hover){
-    transition: all 0.5s ease 0s;
-}
+        <pr>more></pr>
 
-pn:hover{
-    transition: all 0.5s ease 0s;
-    color: rgb(255, 40, 37);
-}
+    </div>
 
-pn:not(:hover){
-    transition: all 0.5s ease 0s;
-}
+    <footer>
 
-ha:hover{
-    transition: all 0.5s ease 0s;
-    color: rgb(255, 40, 37);
-}
+        <div class="blockf">
+            <ul>
+                <li><paf onclick="location.href='#home'">home</paf></li>
+                <li><paf onclick="location.href='#about'">about us</paf></li>
+                <li><paf onclick="location.href='#categories'">categories</paf></li>
+                <li><paf onclick="location.href='#articles'">articles</paf></li>
+                <li><paf onclick="location.href='#products'">products</paf></li>
+            </ul>
+        </div>
 
-ha:not(:hover){
-    transition: all 0.5s ease 0s;
-}
+        <div class="blockf">
+            <ul>
+                <li><paf>privacy policy</paf></li>
+                <li><paf>return policy</paf></li>
+                <li><paf>purchase guarantee</paf></li>
+                <li><paf>terms of service</paf></li>
+                <li><paf>contacts</paf></li>
+            </ul>
+        </div>
 
-.textb h2a:hover{
-    transition: all 0.5s ease 0s;
-    color: rgb(123, 155, 136);
-}
+        <div class="blockf1">
+            <img src = "https://raw.githubusercontent.com/SishaFrog/Japanese-plant-shop/main/img/foot.png";>
+        </div>
 
-.textb h2a:not(:hover){
-    transition: all 0.5s ease 0s;
-}
+    </footer>
 
-.textb1 h2a:hover{
-    transition: all 0.5s ease 0s;
-    color: rgb(123, 155, 136);
-}
-
-.textb1 h2a:not(:hover){
-    transition: all 0.5s ease 0s;
-}
-
-pr:hover{
-    transition: all 0.5s ease 0s;
-    color: rgb(123, 155, 136);
-}
-
-pr:not(:hover){
-    transition: all 0.5s ease 0s;
-}
-
-.block img{
-    position: absolute;
-    border-radius: 10px;
-}
-
-.block1 img{
-    position: absolute;
-    border-radius: 10px;
-}
-
-.blockb img{
-    position: absolute;
-    border-radius: 10px;
-}
-
-.blockb1 img{
-    position: absolute;
-    border-radius: 10px;
-}
-
-.blockpic img{
-    border-radius: 10px;
-}
-
-.blockpic{
-    position: absolute;
-    width: 240px;
-    height: 300px;
-    border-radius: 10px;
-}
-
-.blockpic:hover{
-    transition: all 0.7s ease 0s;
-    opacity: 0;
-}
-
-.blockpic:not(:hover){
-    transition: all 0.7s ease 0s;
-    opacity: 1;
-}
-
-paf:hover{
-    transition: all 0.5s ease 0s;
-    color: rgb(255, 40, 37);
-}
-
-paf:not(:hover){
-    transition: all 0.5s ease 0s;
-}
+</body>
+</html>
