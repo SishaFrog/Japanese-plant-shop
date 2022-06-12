@@ -419,6 +419,8 @@ pal:hover{
 .blockcl:not(:hover) pal{
     transition: all 1s ease 0s;
     opacity: 0;
+    margin-left: 50px;
+
 }
 
 .block{
