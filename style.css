@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 pc{
     font-size: 40pt;
     color: rgb(255, 40, 37); 
@@ -15,7 +19,7 @@ pg{
     color: rgb(123, 155, 136); 
     line-height: 40px;
     font-family: 'Georgia';
-    margin-right: 45px;
+    margin-right: 44px;
     cursor: pointer;
 }
 pn{
